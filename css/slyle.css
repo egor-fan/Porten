@@ -24,18 +24,13 @@ li{
   font-weight: bold; 
 } 
 
-.container{
-  max-width: 1110px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
 .container_1110{
-  min-width: 1110px;
+  width: 1110px;
   padding: 0 15px;
   margin: 0 auto;
 }
 .container_1920{
-  max-width: 1920px;
+  width: 1920px;
   margin: 0 auto;
 }
 
@@ -129,8 +124,8 @@ body{
 main{
   background: url("../img/fon1.png") 0 0/cover no-repeat;
   background-position: 50% 50%;
-  min-width: 1110px;
-  min-height: 810px;
+  /* max-width: 1920px; */
+  height: 810px;
   margin: 0 auto;
 }
 
@@ -261,7 +256,7 @@ main{
   width: 50%;
   /* min-width: 880px; */
   /* min-height: 730px; */
-  max-height: 1000px;
+  /* max-height: 1000px; */
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -448,7 +443,7 @@ h5{
 }
 
 .cats{
-  min-width: 300px;
+  max-width: 300px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -466,8 +461,7 @@ h5{
 .footer{
   background: url("../img/footer.png") 0 0/cover no-repeat;
   background-position: 50% 50%;
-  min-width: 1110px;
-  min-height: 400px;
+  height: 400px;
   margin: 0 auto;
 }
 
@@ -487,9 +481,10 @@ h5{
 
 .follow{
   background-color: #000000;
-  padding: 10px 20px;
+  padding: 15px 20px;
   text-transform: uppercase;
   transition-duration: 0.5s;
+  max-width: 210px;
 }
 
 input{
@@ -521,15 +516,299 @@ input{
   line-height: 1.6rem;
   color: #D0D0D0;
   padding: 17px 10px;
-
   }
 
 .figma a{
   color: #ffffff;
 }
 
+@media (max-width: 1440px){
+  .container_1920{
+    max-width: 1440px;
+  }
+}
 
-@media (max-width: 1200px) {
+@media (max-width: 1200px){
+  .container_1920{
+    max-width: 1180px;
+  }
+  .contentBody__collection {
+    padding: 0 70px;
+  }
+    .card-watch_new {
+    width: 30%;
+  }
+  .brends__coco img{
+  width: 40%;
+  height: 160px;
+  padding: 0 15px;
+}
+
+.brends__coco{
+  flex-wrap: wrap;
+}
+}
+
+@media (max-width: 1024px){
+  .container_1110,
+  .container_1920{
+    max-width: 1024px;
+  }
+}
+
+@media (max-width: 850px){
+  .container_1110,
+  .container_1920{
+    max-width: 850px;
+  }
+  .footer__form{
+  display: flex;
+  flex-direction: column;
+  }
+  .contentBody__collection {
+    padding: 0px 45px;
+  }
+}
+
+
+@media (max-width: 770px){
+  .container_1110,
+  .container_1920{
+    max-width: 770px;
+  }
+  .footer__form{
+  display: flex;
+  flex-direction: column;
+  }
+  .brends__coco img {
+    height: 120px;
+  }
+  .header-menu li:nth-child(3) {
+    margin-right: 0px;
+  }
+  .header-icons img:nth-child(1) {
+    margin-right: 20px;
+  }
+  .contentBody1,
+  .contentBody2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .contentBody__fon2 {
+    width: 100%;
+    min-height: 730px;
+  }
+  .contentBody__fon3 {
+    width: 100%;
+  }
+  .contentBody__watch {
+    width: 100%;
+  }
+  .contentBody__collection {
+    width: 100%;
+    min-height: 500px;
+  }
+  html{
+    font-size: 8px;
+  }
+  
+}
+
+@media (max-width: 450px){
+  .container_1110,
+  .container_1920{
+    max-width: 450px;
+  }
+  .block{
+    display: none;
+  }
+  .card-watch img {
+  padding: 30px 0px;
+  width: 90%;
+  }
+  .contentBody__fon2,
+  .contentBody__fon3 {
+    width: 100%;
+    height: 100vh;
+  }
+  .contentBody__collection {
+  padding: 0px 40px;
+  }
+  .brends__coco img {
+    width: 100%;
+    height: 150px;
+  }
+
+  .footer__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    margin-bottom: 50px;
+    padding-top: 40px;
+  }
+  .footer__shop,
+  .footer__category,
+  .footer__rassyl{
+    width: 100%;
+  }
+  .footer__shop{
+    padding-bottom: 75px;
+    padding-right: 0;
+  }
+  .footer__category {
+    width: 100%;
+    padding-right: 0;
+  }
+  .footer__shop-text{
+    font-size: 2.4rem;
+    text-align: justify;
+  }
+  .cats {
+    max-width: 100%;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  h5{
+    text-align: center;
+  }
+  .cat{
+    background: rgba(255, 255, 255, 0.4);
+    text-align: center;
+    font-size: 2rem;
+  }
+  .footer__rassyl-text {
+    padding-bottom: 45px;
+    font-size: 2.4rem;
+  }
+  input {
+    width: 100%;
+    font-size: 2rem;
+    padding: 25px 20px;
+  }
+  .follow {
+    background-color: rgba(255, 255, 255, 0.2);
+    max-width: 100%;
+    font-size: 2rem;
+    margin-top: 20px;
+  } 
+}
+
+@media (max-width: 425px){
+  .container_1110,
+  .container_1920{
+    max-width: 425px;
+  }
+  .card-watch_new {
+    width: 40%;
+  }
+  .watch{
+    flex-wrap: wrap;
+  }
+  .card-watch{
+    width: 70%;
+  }
+}
+
+@media (max-width: 325px){
+  .container_1110,
+  .container_1920{
+    max-width: 325px;
+  }
+  .contentBody__collection {
+    padding: 0px 17px;
+  }
+  .footer__shop-text {
+    font-size: 2.2rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/* @media (max-width: 1440px){
+  .container_1920{
+  max-width: 1440px;
+}
+}
+
+@media (max-width: 1200px){
+  .contentBody__collection {
+    padding: 0 80px;
+}
+}
+@media (max-width: 1100px){
+  .container_1920,
+  .container{
+  max-width: 1024px;
+  }
+  .brends__coco img {
+    width: 45%;
+    height: 150px;
+  }
+  .brends__coco{
+    flex-wrap: wrap;
+  }
+
+  .contentBody__collection {
+    padding: 0 50px;
+  }
+  .card-watch_new {
+    margin-bottom: 40px;
+    width: 30%;
+}
+}
+@media (max-width: 1024px){
+  .container_1920,
+  .container{
+  max-width: 1024px;
+  }
+  .card-watch_mb {
+    margin-bottom: 100px;
+  }
+  .card-watch img {
+    padding: 25px 0px;
+    margin-bottom: 25px;
+    width: 90%;
+  }
+  .contentBody__watch {
+    margin: 80px 0 80px;
+  }
+  .contentBody__collection {
+    padding: 0 30px;
+  }
+  
+  .card-watch_new {
+    width: 26%;
+}
+}
+
+@media (max-width: 760px){
+  .container_1920,
+  .container{
+  max-width: 760px;
+  }
+  .follow{
+  padding: 15px 20px;
+  max-width: 210px;
+  }
+  .footer__form{
+  flex-direction: column;
+  }
+  .brends__coco img {
+    width: 50%;
+    height: 170px;
+}
+} */
+
+/* @media (max-width: 1200px) {
   .contentBody__collection {
   padding: 0 50px;
   }
@@ -552,7 +831,7 @@ input{
   .footer__container,
   .footer,
   main{
-    min-width: 1024px;
+    max-width: 1024px;
   }
   .card-watch_new {
     width: 33%;
@@ -632,7 +911,7 @@ input{
   }
   .footer__rassyl{
   /* min-width: 350px; */
-  width: 33%;
+  /* width: 33%;
   font-size: 1.8rem;
   }
 
@@ -656,4 +935,4 @@ input{
   }
 
 
-}
+} */ 
