@@ -551,9 +551,9 @@ input{
 }
 
 @media (max-width: 1200px){
-  .container_1920{
+  /* .container_1920{
     max-width: 1180px;
-  }
+  } */
   .contentBody__collection {
     padding: 0 70px;
   }
@@ -574,15 +574,15 @@ input{
 @media (max-width: 1024px){
   .container_1110,
   .container_1920{
-    max-width: 1024px;
+    max-width: 100vw;
   }
 }
 
 @media (max-width: 850px){
-  .container_1110,
+  /* .container_1110,
   .container_1920{
     max-width: 850px;
-  }
+  } */
   .footer__form{
   display: flex;
   flex-direction: column;
@@ -594,10 +594,10 @@ input{
 
 
 @media (max-width: 770px){
-  .container_1110,
+  /* .container_1110,
   .container_1920{
     max-width: 770px;
-  }
+  } */
   .footer__form{
   display: flex;
   flex-direction: column;
@@ -638,10 +638,10 @@ input{
 }
 
 @media (max-width: 450px){
-  .container_1110,
+  /* .container_1110,
   .container_1920{
     max-width: 450px;
-  }
+  } */
   .block{
     display: none;
   }
@@ -718,10 +718,10 @@ input{
 }
 
 @media (max-width: 425px){
-  .container_1110,
+  /* .container_1110,
   .container_1920{
     max-width: 425px;
-  }
+  } */
   .card-watch_new {
     width: 40%;
   }
@@ -734,10 +734,10 @@ input{
 }
 
 @media (max-width: 375px){
-  .container_1110,
+  /* .container_1110,
   .container_1920{
     max-width: 375px;
-  }
+  } */
   .contentBody__collection {
     padding: 0px 17px;
   }
@@ -750,10 +750,10 @@ input{
 }
 
 @media (max-width: 325px){
-  .container_1110,
+  /* .container_1110,
   .container_1920{
     max-width: 325px;
-  }
+  } */
 }
 
 
