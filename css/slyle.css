@@ -711,16 +711,23 @@ input{
   }
 }
 
-@media (max-width: 325px){
+@media (max-width: 375px){
   .container_1110,
   .container_1920{
-    max-width: 325px;
+    max-width: 375px;
   }
   .contentBody__collection {
     padding: 0px 17px;
   }
   .footer__shop-text {
     font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 325px){
+  .container_1110,
+  .container_1920{
+    max-width: 325px;
   }
 }
 
