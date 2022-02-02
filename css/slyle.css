@@ -722,6 +722,9 @@ input{
   .footer__shop-text {
     font-size: 2.2rem;
   }
+  .footer__shop {
+    padding-bottom: 125px;
+  }
 }
 
 @media (max-width: 325px){
